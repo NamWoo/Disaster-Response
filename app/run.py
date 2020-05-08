@@ -54,7 +54,8 @@ def index():
                 Bar(
                     x=genre_names,
                     y=genre_related,
-                    name = 'Related'
+                    name = 'Related',
+                    marker_color='lightsalmon'
                 ),
                 
                 Bar(
@@ -79,7 +80,8 @@ def index():
             'data': [
                 Bar(
                     x=cat_names,
-                    y=cat_props
+                    y=cat_props,
+                    marker_color='indianred'
                 )
             ],
 
@@ -89,7 +91,7 @@ def index():
                     'title': "Proportion"
                 },
                 'xaxis': {
-                    'title': "Category",
+                    # 'title': "Category",
                     'tickangle': -45
                 }
             }
